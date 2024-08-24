@@ -15,7 +15,7 @@ if (currentFragment) {
   document.location.href = newBaseURL + currentFragment;
 } else {
   // If there is no fragment, redirect to the new base URL only
-  document.location.href = newBaseURL;
+  document.location.href = newBaseURL + currentFragment;
 }
 </script>
 </head>
